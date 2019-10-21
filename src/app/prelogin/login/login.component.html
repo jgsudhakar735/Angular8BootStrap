@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <form class="form-signin" formGroup="form">
+      <h2 class="form-signin-heading">Login Here :)</h2>
+      <input type="text" class="form-control" formControlName="username" placeholder="Email Address" required="" autofocus="" />
+      <hr>
+      <input type="password" class="form-control" formControlName="password" placeholder="Password" required=""/>
+      <hr>
+      <div class="form-group row">
+          <div class="col-md-6">
+              <button class="btn form-control btn-secondary" id="btn1" (click)="registerHere()">Register</button>
+          </div>
+          <div class="col-md-6">
+              <button class="btn form-control btn-primary" id="login" (click)="login()">Login</button>
+          </div>
+      </div>
+      <a [routerLink]="['/forgotpassword']" routerLinkActive="router-link-active" >Forgotpassword</a>
+    </form>
+  </div>

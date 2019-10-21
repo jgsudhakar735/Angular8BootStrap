@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <form class="form-signin" >
+    <h2 class="form-signin-heading">Hey Register Here :)</h2>
+    <input type="text" class="form-control" name="username" placeholder="User Name" required="" autofocus="" />
+    <hr>
+    <input type="text" class="form-control" name="useremail" placeholder="User Email Id" required="" />
+    <hr>
+    <input type="password" class="form-control" name="password" id="usrPassword" placeholder="Password" required=""/>
+    <hr>
+    <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required="" data-match="#usrPassword"/>
+    <hr>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <button class="btn form-control btn-secondary" id="btn1" (click)="backtoLogin()">Back To Login</button>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn form-control btn-primary" id="btn2" (click)="backtoLogin()">Subscribe</button>
+        </div>
+    </div>
+  </form>
+</div>
